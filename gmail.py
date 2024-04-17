@@ -160,6 +160,3 @@ def get_mail():
 		writer.writeheader()
 		for val in final_list:
 			writer.writerow(val)
-		
-if __name__ == "__main__":
-	get_mail()
