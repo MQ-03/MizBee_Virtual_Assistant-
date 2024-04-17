@@ -42,8 +42,7 @@ def get_ping_status():
 
 def get_weather_forecast():
     # Replace "YOUR_API_KEY" with your OpenWeatherMap API key
-    #OWM_API_KEY = "aa2833058b9b1a7c5b5021dda6a663ff"
-    owm = pyowm.OWM('aa2833058b9b1a7c5b5021dda6a663ff')
+    owm = pyowm.OWM('your own api key')
 
     recognizer = sr.Recognizer()
 
@@ -80,5 +79,3 @@ def get_weather_forecast():
     except Exception as e:
         print(f"MizBee: An error occurred while fetching the weather report: {e}")
         main.speak(f"An error occurred while fetching the weather report: {e}")
-#if __name__ == "__main__":
-#   get_weather_forecast()
