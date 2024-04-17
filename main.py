@@ -12,10 +12,10 @@ from colorama import Fore
 
 lang = 'en'
 
-openai.api_key = "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" #change ChatGPT api key 
+openai.api_key = "Pls enter you gpt api" #change ChatGPT api key 
 
-assistant_id = "asst_XE6iV93gn2klrG9PMYD1w0IW" 
-
+assistant_id = "Pls enter your assitant id" 
+# Function for speak response
 def speak(text):
     engine = pyttsx3.init()
 
@@ -32,15 +32,8 @@ def speak(text):
     engine.say(text)
     engine.runAndWait()
     engine.setProperty('rate', 160)
-"""
-def type():
-
-    usrinput = input("Type: ")
-    query = usrinput
-    print(f"You: {query}")
-    database.insert_qry(query)
-    return query
-"""
+    
+# listern function
 def listen():
     recognizer = sr.Recognizer()
     with sr.Microphone() as source:
@@ -60,7 +53,7 @@ def listen():
     except sr.RequestError as e:
         print(f"MizBee: Could not request results from Google Speech Recognition service; {e}")
         return ""
-    
+    # Chat GPT response function.
 def chat_with_gpt3(prompt):
     try:
         response = openai.Completion.create(
@@ -90,7 +83,7 @@ def user_ai():
             database.insert_gpt(response, query)
             print(f"MizBee: {response}")
             speak(response)
-
+# query response function.
 def ai_assistant():
     print(Fore.MAGENTA)
     database.greet()
