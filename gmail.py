@@ -1,21 +1,3 @@
-'''
-Reading GMAIL using Python
-	- Abhishek Chhibber
-'''
-
-'''
-This script does the following:
-- Go to Gmal inbox
-- Find and read all the unread messages
-- Extract details (Date, Sender, Subject, Snippet, Body) and export them to a .csv file / DB
-- Mark the messages as Read - so that they are not read again 
-'''
-
-'''
-Before running this script, the user should get the authentication by following 
-the link: https://developers.google.com/gmail/api/quickstart/python
-Also, client_secret.json should be saved in the same directory as this file
-'''
 
 # Importing required libraries
 import os
