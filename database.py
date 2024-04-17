@@ -14,9 +14,9 @@ import speech_recognition as sr
 # Globel variable for date & time.
 date_time = datetime.now().strftime("%d/%m/%Y %I:%M:%S %p")
 #uri and credential for mongoDB connection
-uri = "mongodb+srv://mubu3:vpFSyhIjXVVmW7je@mizbee.xhbvmay.mongodb.net/?retryWrites=true&w=majority"
+uri = "pls enter your uri"
 
-ServerApi.api_key = "vald4rbw3znOY606doQPa3azYXyzwmE2w9X4eFeJ35uZhyrziBOxJhX5n5O2sio3" 
+ServerApi.api_key = "pls enter your api" 
 
 # Create a new client and connect to the server
 #myclient = MongoClient(uri, server_api=ServerApi('1'))
