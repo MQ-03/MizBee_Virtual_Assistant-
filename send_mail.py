@@ -14,8 +14,8 @@ scol = mydb["su_users"] # change the collection name of normal super users
 #database variables
 host = "smtp.gmail.com"
 port = 587
-from_mail = "mizbee.ai.info@gmail.com"
-password = "fjxp zbvb ztth zawp"
+from_mail = "your@mail.id"
+password = "you pswd"
 #mail status and SMTP responses
 try:
     smtp = smtplib.SMTP(host, port)
