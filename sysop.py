@@ -11,7 +11,7 @@ import os.path
 import main
 
 # Replace 'your_calendar.ics' with the path to your actual iCalendar file
-ical_file_path = '/Users/mubu/Documents/Calendar.ics'
+ical_file_path = '/path/Calendar.ics'
 
 def open_spotify():
     system_platform = platform.system().lower()
